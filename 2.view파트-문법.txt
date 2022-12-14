@@ -1,0 +1,69 @@
+
+   1. HTML (Hyper Text Markup Language)
+    - <시작태그 속성1="값1" 속성2="값2">내용</종료태그>
+    - *.html
+    - 웹 문서의 구조(=건축에 비유)
+    - Eclipse + Tomcat   vs   vscode + Live Server     <=====> Cloud Server
+              [Local Development Environment]                       [Deploy]
+    - 웹 브라우저가 해석(=Parse) 후 결과를 표현(=Rendering)
+
+    1) ! + Tab : html5 문서 구조(=템플릿) 출력
+    2) meta:vp + Tab : 모바일 디바이스에 알맞게 화면을 렌더링하는 최신 기술
+    3) 명령어 정리
+        - h1 ~ h6 : 제목 태그
+        - p : 내용 태그
+        - br : 줄바꿈 태그
+        - img : 이미지 삽입 태그
+        - a : 앵커 태그
+        - table : 테이블(=표) 삽입 태그   /   tr, td, th,...
+        - ul,ol,dl : 목록 태그  /   li, dt, dd...
+        - div : 영역 구분 태그
+        - header, section, nav, aside, footer, article,... : 시멘틱 태그
+        - 그밖에 자주는 아니지만 이따금씩 사용하는 태그명령도 있고,..
+   4) Block Level Element   vs   Inline Level Element
+       - p, h1 ...                       a, img ...
+       - 알아서 줄바꿈 되는       -필요하면 줄바꿈 해주는
+   ※ Tag vs Element : 태그는 명령어 p, h1, a... 엘리먼트(=요소) p의 시작~끝 (범위)
+
+   ※ 프로토타입(Prototype) : 시제품 --> 당장 판매가 가능한 정도의 퀄리티 제품,서비스, 디자인...
+       피그마(Prototype Tool) : Sketch, Zepline, Adobe XD, Figma (=Adobe에서 구매)...Balsamiq, proto.io..
+
+
+
+
+  
+
+   2. CSS (Cascade Style Sheet)
+   - *.css
+   - 웹 문서의 표현(=인테리어 비유)
+
+  3. JS (Javascript)  --> jQuery     |    React, Vue     |     Next, Nuxt 
+   - *.js                                                                  프런트엔드+백엔드
+   - 웹 문서의 기능(버튼눌러서 기능 실행)
+
+  ※ 프런트 엔드 개발 기술                                               
+
+   Q. HTML/CSS/Image 등의 정적 파일을 수정하고 브라우저 새로고침시 즉시 반영이 안되면?
+   A.   F12 또는 CTRL+SHIFT+I 또는 마우스 우클릭-검사 : 검사 창(Inspector)
+
+
+ ※ Eclipse 단축키 설정
+    - Ctrl+Shift+L x 2 : Keys Settings 
+    - 또는 Window > Preferences > General > Keys 에서 'Wrap with Abbreviation' 항목의 단축키를 변경
+    - emmet의 명령만 단축키 설정에 남기고, 나머지 명령은 unbind command 단추 눌러서 해제
+
+ ※ vscode 단축키 설정
+    - CTRL+SHIFT+P (명령 프롬프트 호출) : > wrap ---> (자동으로) 약어로 래핑 or Wrap with Abbreviation..
+    - 톱니바퀴(=설정버튼) : 단축키를 신규 등록(+), 사용하려는 키 조합을 순서대로 눌러주고 ENTER로 설정
+    - 추천 키조합 : CTRL+SHIFT+A
+
+
+
+
+
+
+
+
+
+
+

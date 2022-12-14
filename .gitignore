@@ -1,0 +1,13 @@
+# except folder
+content/
+workspace/.metadata/
+workspace/Servers/
+
+# except files
+.mp4
+.mov
+.zip
+.psd
+.ai
+.hwp
+.txt

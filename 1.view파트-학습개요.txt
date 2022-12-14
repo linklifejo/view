@@ -1,0 +1,63 @@
+
+  -  VIEW 파트
+
+  - 쉽게 배우는 HTML5&CSS3 그리고 jQuery
+
+  I. 준비물
+  - Eclipse [o] : 무료 IDE [이전세대~계속 버전업]
+  - Tomcat [x]
+  - Visual Studio Code [x] : MS 제공, 무료 IDE [최신]
+  - NodeJS LTS  [x]
+  - 웹브라우저(Chrome, Edge) [o]
+
+ II. 수업진행
+  - HTML5
+  - CSS3
+  - Javascript    <---> Modern Javascript Framework : React, Vue..
+
+ III. 평가
+  - 미니프로젝트 : Viewpart 평가
+  - 종합적인 실습 : front-end, back-end
+
+  1. HTML5, CSS3, jQuery를 알아보자
+
+   - HTML(5) : 웹문서의 구조를 기술하는 (마크업)언어
+   - CSS(3) : 웹문서의 컬러, 크기, 배치등의 웹문서 스타일을 기술하는 언어
+   - Javascript : HTML,CSS를 조작, 제어하는 언어
+   - jQuery : Javascript에서 자주 사용하는 일부 메소드 등을 jQuery라는 이름의 라이브러리 형태로
+                제공. (언어x, 자바스크립트라는 언어에서 파생된 새로운 문법)
+   ※ jQuery 1.x, 2.x, 3.x --> 4.x 향하고 있지만??
+      현재는 React, Vue, AngularJS 등의 모던 Javascript framework가 대세 (jQuery가 밀렸다!)
+
+   ※ 웹브라우저가 이해하고 해석한 결과를 화면에 보여주고(=렌더링) 인간이 이해하는 과정!!
+  
+    01. 개발환경 구축
+    - 이클립스 with Tomcat v9.0 연동하기
+    - VSC with Live Server 연동하기
+    ※ 이클립스에 Emmet 추가기능 설정하기(https://emmet.io > Download > Eclipse/Aptana Installation 참고)
+    ※ 모든 문서의 인코딩은 UTF-8로 세팅할것
+
+    02. 기본 문법 익히기
+    - HTML은 (현재 표준 버전인) HTML5를 가리킴
+    - HTML은 < (=Angled Bracket, 꺽쇠) 와 > 사이에 명령어를 작성함
+    - HTML 명령어는 태그(=Tag)라고도 부르며, 시작하는 태그와 종료하는 태그로 구분함
+    - 일부 HTML 명령어는 종료하는 태그가 생략되는 경우가 있음 (=meta, link, image, hr, br,...)
+    - 엄격한 문법이 아니므로, 오류가 있어도 브라우저가 알아서 적당히 렌더링 함 (자바 컴파일과정과 비교!)
+    - HTML은 건축물인 집, 사무실등의 건물을 만드는 과정에 비유할 수 있고,
+      CSS는 (건축물 내외부의)인테리어  과정에 비유할 수 있음.
+    - HTML이나 CSS는 emmet(=이멧) 확장 기능을 사용하면 손쉽게 작성할 수 있음(=웹개발자의 필수 도구라고 함)
+    - HTML은 문서의 형식이 *.html을 가리키며 과거엔 *.htm 로도 작성하기도 했음
+    - 웹서버는 보통 index.html 문서를 가장 먼저 찾아서 보여주게 되어 있고 (=JSP의 경우 web.xml에 명시된 순서를 따름)
+       없는 경우 index.jsp, index.php, index.asp 등을 찾아서 보여주며 서버 세팅에 따라 다름.(기본값을 지정할수도!)
+  
+
+
+
+
+
+
+
+
+
+
+
