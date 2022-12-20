@@ -47,10 +47,50 @@ th,td {
 	padding: .5rem 0;
 	text-align: center;
 }
-.enter-fee {
+caption{
+	font-size: 1.125em; 
+	font-weight: bold;
+	padding-bottom: 1em;
+}
+.enter-fee, .daily-casting {
 	width: 600px;
 	margin: 50px auto 30px;
 }
+.enter-fee th, .daily-casting th {
+	width: 25%;
+}
+.daily-casting td {
+	width: 75%;
+	text-align: left;
+	padding-left: 3em;
+}
 .valign-middle {
 	vertical-align: middle;
+}
+.cell-bg {
+	background-color: #ffeded;
+}
+.site-subnav {
+	color: #666;
+	font-size: 13px;
+	background-color: #fafafa;
+	text-align: center;
+	padding: .5rem 0;
+	border-top: 1px solid #666;
+}
+.site-subnav a {
+	margin-right: .5rem; 
+}
+.site-subnav a:hover {
+	text-decoration: underline;
+}
+.site-info {
+	background-color: #000;
+	font-size: 81.25%;
+	text-align: center;
+	overflow: hidden;
+}
+.site-info p {
+	color: #666;
+	margin: 0 0 1rem 0;
 }
