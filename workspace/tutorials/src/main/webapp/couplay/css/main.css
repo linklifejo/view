@@ -1,11 +1,99 @@
 @charset "utf-8";
+/* custom, common style */
+a {
+  text-decoration: none; /* 텍스트-꾸밈: 안함 */
+  color: inherit;
+}
 
 .d-none {
-    display: none
+  display: none;
 }
 
 .hidden_file {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
+
+/* layout : lay + out (두다, 놓다, ~에 배치하다) */
+.tnb {
+  /* flex container 적용 스타일 : 결국, 자식(flex item) 영향받는 */
+  display: flex;
+  justify-content: center; /*flex-start(=left), center, flex-end(=right) */
+  font-size: 0.8125rem;
+  /* border-bottom: 1px solid #000; */
+  background-color: #eee;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.tnb li {
+  color: #aaa;
+  margin: 0 0.5rem;
+}
+.tnb li:hover {
+  color: #333;
+}
+.header-logo {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.gnb {
+  display: flex;
+  justify-content: center;
+}
+.gnb li {
+  border: 1px solid #333;
+  padding: 1rem;
+  text-transform: uppercase; /* 텍스트-변형: 대문자 */
+}
+.gnb li:hover {
+  background-color: black;
+  color: beige;
+}
+.gnb li:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+}
+
+.bg-gold {
+  background-color: #ffea00;
+}
+.big-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+.big-text h2 {
+  font-size: 2.5rem; /* 반응형 단위: rem, em, %, vw, vh */
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+.big-text p {
+  font-size: 1rem;
+}
+.main article {
+  display: flex;
+  justify-content: center;
+}
+.form-wrap {
+  width: 90%;
+}
+.form-wrap table {
+  width: 100%;
+}
+.form-wrap table th {
+  width: 30%;
+  text-align: left;
+  background-color: #ddd;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  background-color: blue;
+}
+.form-wrap table td {
+  width: 70%;
+}
+

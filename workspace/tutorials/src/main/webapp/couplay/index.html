@@ -14,7 +14,7 @@
     <header>
         <div class="header-topNav">
             <nav>
-                <ul>
+                <ul class="tnb">
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
                     <li><a href="#">장바구니</a></li>
@@ -29,7 +29,7 @@
         <!-- /.header-logo -->
         <div class="header-mainNav">
             <nav>
-                <ul>
+                <ul class="gnb"><!-- global navigation bar : gnb-->
                     <li><a href="#">shopping</a></li>
                     <li><a href="#">sales</a></li>
                     <li><a href="#">event</a></li>
@@ -45,102 +45,105 @@
     <section class="main">
         <h2 class="d-none">커플레이 개인 및 사업자 회원가입 폼</h2>
         <article>
-            <form autocomplete="off">
-                <table class="type">
-                    <caption>가입구분</caption>
-                    <tr>
-                        <th>회원구분</th>
-                        <td>
-                            <label for="private">개인회원</label>
-                            <input type="radio" name="join_type" id="private" checked>
-                            <label for="business">사업자회원</label>
-                            <input type="radio" name="join_type" id="business">
-                        </td>
-                    </tr>
-                </table>
-                <table>
-                    <caption>기본정보</caption>
-                    <tr>
-                        <th>
-                            <label for="user_id">아이디</label>
-                        </th>
-                        <td>
-                            <input type="text" id="user_id" name="user_id" maxlength="12" autofocus placeholder="회원ID 또는 이메일 주소 입력">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="user_pw">비밀번호</label>
-                        </th>
-                        <td>
-                            <input type="password" maxlengthname="user_pw" id="user_pw">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="user_name">이름</label>
-                        </th>
-                        <td>
-                            <input type="text" id="user_name" name="user_name">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="user_tel">연락처</label>
-                        </th>
-                        <td>
-                            <select id="user_tel1">
-                                <option value="062">광주</option>
-                                <option value="031">인천</option>
-                                <option value="02" selected>서울</option>
-                            </select>
-                            -
-                            <input type="text" maxlength="4" id="user_tel2" name="user_tel2">
-                            -
-                            <input type="text" maxlength="4" id="user_tel3" name="user_tel3">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="user_sms">sms 수신여부</label>
-                        </th>
-                        <td>
-                            <input type="checkbox" id="user_sms" name="user_sms">수신함                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="user_email">이메일</label>
-                        </th>
-                        <td>
-                            <input type="text" name="user_email" id="user_email">
-                            @
-                            <input type="text" name="hidden_domain" id="hidden_domain" disabled="disabled">
-                            <select id="email_domain">
-                                <option value="" selected>선택하세요</option>
-                                <option value="naver.com">네이버</option>
-                                <option value="naver.com">카카오</option>
-                                <option value="naver.com">지메일</option>
-                                <option value="">직접입력</option>
-                            </select>                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            프로필사진
-                        </th>
-                        <td>
-                            <input type="text" name="file_path" id="file_path" disabled>
-                            <label for="user_file">찾아보기</label>
-                            <div class="hidden_file">
-                                <input type="file" name="user_file" id="user_file">
-                            </div>
-                        </td>
-                    </tr>                    
-                </table>
-                <input type="submit" value="가입"><!-- 데이터 전송 버튼 -->
-                <input type="reset" value="취소"><!-- 입력막대에 입력한 데이터를 지워지게 하는 버튼 -->
-            </form>
+            <div class="form-wrap">
+                <form autocomplete="off">
+                    <table class="type">
+                        <caption>가입구분</caption>
+                        <tr class="bg-gray border-bottom py-1 text-left">
+                            <th>회원구분</th>
+                            <td>
+                                <label for="private">개인회원</label>
+                                <input type="radio" name="join_type" id="private" checked>
+                                <label for="business">사업자회원</label>
+                                <input type="radio" name="join_type" id="business">
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <caption>기본정보</caption>
+                        <tr>
+                            <th>
+                                <label for="user_id">아이디</label>
+                            </th>
+                            <td>
+                                <input type="text" id="user_id" name="user_id" maxlength="12" autofocus placeholder="회원ID 또는 이메일 주소 입력">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="user_pw">비밀번호</label>
+                            </th>
+                            <td>
+                                <input type="password" maxlengthname="user_pw" id="user_pw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="user_name">이름</label>
+                            </th>
+                            <td>
+                                <input type="text" id="user_name" name="user_name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="user_tel">연락처</label>
+                            </th>
+                            <td>
+                                <select id="user_tel1">
+                                    <option value="062">광주</option>
+                                    <option value="031">인천</option>
+                                    <option value="02" selected>서울</option>
+                                </select>
+                                -
+                                <input type="text" maxlength="4" id="user_tel2" name="user_tel2">
+                                -
+                                <input type="text" maxlength="4" id="user_tel3" name="user_tel3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="user_sms">sms 수신여부</label>
+                            </th>
+                            <td>
+                                <input type="checkbox" id="user_sms" name="user_sms">수신함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="user_email">이메일</label>
+                            </th>
+                            <td>
+                                <input type="text" name="user_email" id="user_email">
+                                @
+                                <input type="text" name="hidden_domain" id="hidden_domain" disabled="disabled">
+                                <select id="email_domain">
+                                    <option value="" selected>선택하세요</option>
+                                    <option value="naver.com">네이버</option>
+                                    <option value="naver.com">카카오</option>
+                                    <option value="naver.com">지메일</option>
+                                    <option value="">직접입력</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                프로필사진
+                            </th>
+                            <td>
+                                <input type="text" name="file_path" id="file_path" disabled>
+                                <label for="user_file">찾아보기</label>
+                                <div class="hidden_file">
+                                    <input type="file" name="user_file" id="user_file">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="가입"><!-- 데이터 전송 버튼 -->
+                    <input type="reset" value="취소"><!-- 입력막대에 입력한 데이터를 지워지게 하는 버튼 -->
+                </form>
+            </div>
+            <!-- /.form-wrap -->
         </article>
     </section>
     <!-- /.main -->
