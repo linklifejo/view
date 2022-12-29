@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- open graph generator / 북마크 참고 : 각자 OG 삽입하세요! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>커플레이 : MZ세대의 놀이문화</title>
+    <link rel="shortcut icon" href="images/favicon-red.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
     <h1 class="d-none">커플레이</h1>
@@ -52,10 +54,10 @@
                         <tr class="bg-gray border-bottom py-1 text-left">
                             <th>회원구분</th>
                             <td>
-                                <label for="private">개인회원</label>
                                 <input type="radio" name="join_type" id="private" checked>
-                                <label for="business">사업자회원</label>
+                                <label for="private">개인회원</label>
                                 <input type="radio" name="join_type" id="business">
+                                <label for="business">사업자회원</label>
                             </td>
                         </tr>
                     </table>
@@ -66,6 +68,7 @@
                                 <label for="user_id">아이디</label>
                             </th>
                             <td>
+                                <span class="td-mark d-none">아이디</span>
                                 <input type="text" id="user_id" name="user_id" maxlength="12" autofocus placeholder="회원ID 또는 이메일 주소 입력">
                             </td>
                         </tr>
@@ -74,7 +77,8 @@
                                 <label for="user_pw">비밀번호</label>
                             </th>
                             <td>
-                                <input type="password" maxlengthname="user_pw" id="user_pw">
+                                <span class="td-mark d-none">비밀번호</span>
+                                <input type="password" maxlengthname="user_pw" id="user_pw" placeholder="특수문자, 영문 대소문자, 숫자조합">
                             </td>
                         </tr>
                         <tr>
@@ -82,14 +86,15 @@
                                 <label for="user_name">이름</label>
                             </th>
                             <td>
-                                <input type="text" id="user_name" name="user_name">
+                                <span class="td-mark d-none">이름</span>
+                                <input type="text" id="user_name" name="user_name" placeholder="최대 20자">
                             </td>
                         </tr>
                         <tr>
                             <th>
                                 <label for="user_tel">연락처</label>
                             </th>
-                            <td>
+                            <td><span class="td-mark d-none">연락처</span>
                                 <select id="user_tel1">
                                     <option value="062">광주</option>
                                     <option value="031">인천</option>
@@ -103,10 +108,13 @@
                         </tr>
                         <tr>
                             <th>
-                                <label for="user_sms">sms 수신여부</label>
+                                sms 수신여부
                             </th>
                             <td>
-                                <input type="checkbox" id="user_sms" name="user_sms">수신함
+                                <span class="td-mark d-none">문자수신</span>
+                                <input type="checkbox" id="user_sms" name="user_sms">
+                                <label for="user_sms">수신함</label>
+                                <span id="tip" class="d-none">(광고 및 정보성 문자 메세지 수신여부)</span>
                             </td>
                         </tr>
                         <tr>
@@ -114,9 +122,10 @@
                                 <label for="user_email">이메일</label>
                             </th>
                             <td>
+                                <span class="td-mark d-none">이메일</span>
                                 <input type="text" name="user_email" id="user_email">
                                 @
-                                <input type="text" name="hidden_domain" id="hidden_domain" disabled="disabled">
+                                <input type="text" name="hidden_domain" class="d-none" id="hidden_domain" disabled="disabled">
                                 <select id="email_domain">
                                     <option value="" selected>선택하세요</option>
                                     <option value="naver.com">네이버</option>
@@ -131,6 +140,7 @@
                                 프로필사진
                             </th>
                             <td>
+                                <span class="td-mark d-none">프로필사진</span>
                                 <input type="text" name="file_path" id="file_path" disabled>
                                 <label for="user_file">찾아보기</label>
                                 <div class="hidden_file">
@@ -139,8 +149,11 @@
                             </td>
                         </tr>
                     </table>
-                    <input type="submit" value="가입"><!-- 데이터 전송 버튼 -->
-                    <input type="reset" value="취소"><!-- 입력막대에 입력한 데이터를 지워지게 하는 버튼 -->
+                    <div id="btns" class="d-flex justify-center">
+                        <input type="submit" value="가입"><!-- 데이터 전송 버튼 -->
+                        <input type="reset" value="취소"><!-- 입력막대에 입력한 데이터를 지워지게 하는 버튼 -->
+                    </div>
+                    <!-- /#btns.d-flex justify-center -->
                 </form>
             </div>
             <!-- /.form-wrap -->
@@ -150,7 +163,7 @@
     <footer>
         <div class="extraNav">
             <nav>
-                <ul>
+                <ul class="d-flex py-1 justify-center bg-black text-white">
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">개인정보취급방침</a></li>
                     <li><a href="#">이용안내</a></li>
@@ -158,7 +171,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="site-info">
+        <div class="site-info d-flex flex-column align-center py-1">
             <p>광주광역시 서구 경열로3, 커플레이</p>
             <p>copyright&copy; couplay. all rights reserved</p>
         </div>

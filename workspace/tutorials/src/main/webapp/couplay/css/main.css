@@ -1,5 +1,10 @@
 @charset "utf-8";
 /* custom, common style */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
 a {
   text-decoration: none; /* 텍스트-꾸밈: 안함 */
   color: inherit;
@@ -82,18 +87,123 @@ a {
 .form-wrap {
   width: 90%;
 }
+table.type {
+  /* 종속 선택자 : table태그인데 클래스명이 type인 요소를 선택 */
+  margin-bottom: 2rem;
+}
 .form-wrap table {
   width: 100%;
 }
 .form-wrap table th {
   width: 30%;
   text-align: left;
+  text-indent: 5rem;
   background-color: #ddd;
   padding: 1rem 0;
-  border-bottom: 1px solid #ccc;
-  background-color: blue;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #999;
 }
 .form-wrap table td {
-  width: 70%;
+  text-indent: 2rem;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #999;
+}
+.form-wrap caption {
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: bolder; /* 글꼴에 따라 다름 */
+}
+.form-wrap input {
+  padding: 0.25rem 0;
+  text-indent: 1rem;
+}
+#user_id,
+#user_pw,
+#user_name {
+  width: 60%;
+}
+#user_tel1 {
+  width: 10%;
+  padding: 0.25rem 0;
+  text-indent: 0.5rem;
+}
+#user_tel2,
+#user_tel3 {
+  width: 22.9%;
+}
+#email_domain {
+  padding: 0.25rem 0;
+}
+#user_email {
+  width: 43%;
+}
+#file_path {
+  width: 47.5%;
+}
+[for="user_file"] {
+  /* 속성 선택자 */
+  background-color: black;
+  color: white;
+  padding: .1rem .5rem;
+}
+[type=submit],[type=reset] {
+  text-indent: 0 !important; /* 많이 사용하지 않도록.. */
+  padding: .875rem 2rem !important;
+  margin: 1rem 0;
+  font-size: 1.250rem;
+}
+[type=submit] {
+  background-color: black;
+  color: white;
+}
+[type=reset] {
+background-color: transparent;
+margin-left: .25rem
 }
 
+.d-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.bg-black {
+  background-color: black
+}
+.text-white {
+  color: white
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.flex-column {
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+
+.site-info {
+  line-height: 1.5
+}
+/* 반응형 스타일(II) */
+@media screen and (max-width: 480px) {
+  .form-wrap th {
+    display: none
+  }
+  .form-wrap td {
+    padding: 1rem 0
+  }
+  #user_id, #user_pw, #user_name {
+    width: 20%
+  }
+  #tip {
+    display: inline;
+    color: orangered;
+    font-size: .875rem
+  }
+  .td-mark {
+    display: inline-block;
+    width: 10%;
+  }
+}
