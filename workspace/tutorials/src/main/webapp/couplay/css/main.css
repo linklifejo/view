@@ -144,21 +144,22 @@ table.type {
   /* 속성 선택자 */
   background-color: black;
   color: white;
-  padding: .1rem .5rem;
+  padding: 0.1rem 0.5rem;
 }
-[type=submit],[type=reset] {
+[type="submit"],
+[type="reset"] {
   text-indent: 0 !important; /* 많이 사용하지 않도록.. */
-  padding: .875rem 2rem !important;
+  padding: 0.875rem 2rem !important;
   margin: 1rem 0;
-  font-size: 1.250rem;
+  font-size: 1.25rem;
 }
-[type=submit] {
+[type="submit"] {
   background-color: black;
   color: white;
 }
-[type=reset] {
-background-color: transparent;
-margin-left: .25rem
+[type="reset"] {
+  background-color: transparent;
+  margin-left: 0.25rem;
 }
 
 .d-flex {
@@ -168,10 +169,10 @@ margin-left: .25rem
   justify-content: center;
 }
 .bg-black {
-  background-color: black
+  background-color: black;
 }
 .text-white {
-  color: white
+  color: white;
 }
 .py-1 {
   padding: 1rem 0;
@@ -184,26 +185,29 @@ margin-left: .25rem
 }
 
 .site-info {
-  line-height: 1.5
+  line-height: 1.5;
 }
 /* 반응형 스타일(II) */
 @media screen and (max-width: 480px) {
   .form-wrap th {
-    display: none
+    display: none;
   }
-  .form-wrap td {
-    padding: 1rem 0
+  .form-wrap table td {
+    padding: 1rem 0;
+    text-indent: 0.5rem;
   }
-  #user_id, #user_pw, #user_name {
-    width: 20%
+  #user_id,
+  #user_pw,
+  #user_name {
+    width: 63%;
   }
   #tip {
     display: inline;
     color: orangered;
-    font-size: .875rem
+    font-size: 0.875rem;
   }
   .td-mark {
     display: inline-block;
-    width: 10%;
+    width: 20%;
   }
 }
