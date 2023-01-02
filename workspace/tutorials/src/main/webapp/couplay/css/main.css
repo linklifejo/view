@@ -187,6 +187,48 @@ table.type {
 .site-info {
   line-height: 1.5;
 }
+
+.login,
+.login td {
+  border: 0 !important;
+}
+
+.login label {
+  display: block;
+  margin: 5px 0;
+}
+.login #user_id,
+.login #user_pw {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.login [type="submit"] {
+  background-color: #d23939;
+  padding: 0.5rem 1.25rem !important;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 0;
+}
+.form-wrap table.login td {
+  text-indent: 0;
+}
+.group {
+  flex-direction: row;
+}
+.group-form [for="user_id"] {
+  padding: 0 0 0 20px;
+  background-image: url("../images/icon-person.png");
+  background-repeat: no-repeat;
+}
+.group-form [for="user_pw"] {
+  padding: 0 0 0 20px;
+  background-image: url("../images/icon-lock.png");
+  background-repeat: no-repeat;
+}
+.group-ad {
+  margin-left: 2rem;
+}
 /* 반응형 스타일(II) */
 @media screen and (max-width: 480px) {
   .form-wrap th {
@@ -209,5 +251,9 @@ table.type {
   .td-mark {
     display: inline-block;
     width: 20%;
+  }
+  .group {
+    flex-direction: column;
+    align-items: center;
   }
 }
