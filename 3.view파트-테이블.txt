@@ -1,0 +1,92 @@
+
+
+    HTML  --> VSC + Live Server  |   Eclipse + Tomcat
+
+    1. 텍스트
+
+     <h1>..</h1> : 중요한 제목임을 나타내는 태그 명령어, 크고 굵은 글자체 적용(=스타일)
+      ※ h1 ~ h6 : 가장 중요한 ~ 덜 중요한   >   일반 텍스트
+      ※ 검색엔진이 검색의 우선순위를 두고 찾는 요소!
+
+     <p>...</p> : 짧은 문단, 긴 문장(두줄 이상의 글의 일부~전체)을 나타내는 명령어
+
+     <a>...</a> : 클릭하면 연결되는 문서나 URL(=웹 주소)로 이동시키는 명령어
+     <a href="#">클릭 텍스트</a> : 클릭은 되는데, 이동은 하지 않는 링크 <-- 임시 링크
+     <a href="test.html#intro">테스트</a>
+     예) <a href="http://www.naver.com">네이버</a>로 이동하기
+     
+    ※ a : anchor (=고정), href : host reference <참조할 위치,주소>
+     
+    2. 이미지
+
+    그림, 사진, (=정지영상),  Image 단어에서 파생된 HTML 명령어
+
+   <img src="images/button.png" alt="회원가입"> : 웹문서와 이미지가 같은 공간에 있는데, 그중에 button이라는 파일
+   <figure>...</figure>   : 이미지 뿐만 아니라 문서 외부에서 만들어진 컨텐츠를 문서에 삽입할때 사용하는 태그
+   <figcaption>...</figcaption>  : 삽입되는 요소를 검색이 잘 되도록 컨텐츠의 제목을 추가하는 태그
+
+   ※ src(=이미지의 출처, source), alt(=alternative text) : 속성(=attribute)
+      img태그 : 이미지 삽입하면 명령어
+  
+   ※ 경로(path)
+
+      1. 절대경로  :  http://www.naver.com  ,광주광역시 서구 ~
+
+      2. 상대경로 : [slash path]
+      2-1. 같은 위치 : ./ or 생략  ---> <img src="./button.png"> or <img src="button.png">    
+      2-1. 상위(=다른위치) : ../        ---> <img src="../images/button.png">
+      2-3. 하위(=다른위치) : 경로명/  --> <img src="images/button.png">
+
+     ※ HTML문서가 이미지를 삽입하고자 할때 위치한 상대적인 경로를 자주 사용(=간단, 짧고..)하지만,
+        자주 틀릴수 있음.
+
+   3. 그룹핑/구분 태그
+
+     <div>...</div> : block level element
+     <span>...</span> : inline level element 
+
+
+   TIP) 깃헙을 이용한 웹서비스 해보기  <-- Github Pages 기능 사용해보기
+
+    1) 깃헙 로그인 --> 프로필 공개용 Repository 생성하기
+
+      ex> about-me <---> http://seonyeonghun.github.io/about-me    [주소가 자동으로 생성된다]
+
+    2) 이클립스 studyhtml5 프로젝트의 일부(about-me 관련된것만) 새로운 위치로 복사
+
+    3) git 저장소 초기화 (= git init)
+
+    4) 프로필 공개용 저장소와 연결 (=git remote add origin master https:// ...블라블라..)
+
+    5) 커밋
+
+    6) 푸쉬!
+
+    7) 확인
+    7-1) 웹브라우저 확인
+    7-2) 카카오톡, 네이버라인 채팅방(=자신에게? 보내기) 에 깃헙URL을 보내보기
+    ex> 카카오톡 채팅서버 --> https://계정id.github.io/저장소명 에 접근해서 정보, 컨텐츠를 자동으로 크롤링
+         해서 채팅방에  이미지 썸네일, 사이트 제목, 간단한 텍스트, 하이퍼링크를 제공 : 오픈그래프 태그
+
+    ※ 페이스북 그룹에서 만든 오픈그래프 API는 표준은 아니지만, 소셜 서비스가 활발하게 사용되면서
+       많은 개발자들이 사용하는 태그
+
+    8) 퇴실!
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

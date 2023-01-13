@@ -1,0 +1,29 @@
+
+ :: 자바스크립트 온라인 편집기
+
+  1) jsbin               https://jsbin.com/
+  2) codepen          https://codepen.io/
+  3) repl.it              https://replit.com/site/ide
+  4) codesandbox    https://codesandbox.io/
+       ....many ...
+
+ ※ 클라우드 기반 온라인 IDE 환경 (협업, 작업,..)이 있으므로, 검색필수!!
+
+
+ :: Figjam
+  - 아이디어 회의할때 기록하고 메모하는 용도 (토의도 하고 의견도 반영하는..)
+  - 온라인 화이트 보드 : 개발자를 포함한 작업관계자 모두가 손쉽게 사용
+
+  ※ Figma : 기획자나 보통 디자이너가 세세한 디자인 UI를 작성하는 목적 (Figjam을 바탕으로 디자인)
+
+
+
+
+
+
+
+
+
+
+
+

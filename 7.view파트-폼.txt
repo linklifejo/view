@@ -1,0 +1,63 @@
+ :: semantic web
+
+   - 의미론적인, 의미있는 웹을 구현하는 기술 (semantic tag)
+
+   1) 문서의 영역 구조를 표현하는 태그들 (p.98)
+
+    문서의 영역을 나누는(=div, 나누다,구분하다) 기능 + 의미를 제공하는 태그
+
+     <header>...</header>                            <div class="header">...</div>
+     <nav>...</nav>
+     <section>
+            <article>...</article>           <--->      <div>...</div>
+            <article>...</article>
+     </section>
+     <aside>광고</aside>     
+     <footer>...</footer>
+
+
+   ※ 교재에 나온 summary나 details등의 시멘틱 태그들은 웹 접근성(web accessibility) 측면에서
+     사용을 권장하나, 평소에는 필요성 조차 느끼기 어려운게 사실
+
+    <figure>                                                   <embed src="주소">..</embed>
+     <figcaption>...</figcaption>            vs          <object>...</object>
+     // 이미지, 표, 영상을 삽입                             <param ..>...</param>
+   </figure>
+
+
+  ※ 한국 웹 접근성 연구소 (https://wah.or.kr) 에서 기술문서등을 참고하세요!
+
+
+ :: 웹 폼 태그
+
+  폼(Form) 태그는 사용자의 입력(ex. 회원가입, 로그인, 상품주문, 검색,..)을 받기 위한
+  화면을 구현하는 데 사용하는 태그로, 주로 <form>..</form> 사이에 관련 태그를 삽입해
+  UI를 구성합니다.
+
+  ※ 폼 태그가 유일하게 사용자와 개발자간의 상호작용(=interaction)을 위한 태그명령
+  ※ 폼에 입력한 데이터는 서버로 전송이 이뤄짐! 
+  
+  <form>
+        <fieldset>
+           <legend class="d-none">대기자 정보 입력 영역</legend>
+           <label>이름</label>
+           <input type="text" name="user_name" id="user_name">
+           <input type="button" value="전송">
+        </fieldset>
+  </form>
+
+
+
+
+
+
+
+
+  - 파자마 뷰 파티~!
+  (https://meet.jit.si.com/pajam-party-201)
+
+
+
+
+
+

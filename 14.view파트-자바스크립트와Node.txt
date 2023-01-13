@@ -1,0 +1,95 @@
+
+  :: 자바스크립트 개요
+
+   - 넷스케이프사의 웹브라우저에서 웹페이지 처리능력 향상을 위해
+     개발한 LiveScript 기반 ==> Javascript [Java 언어를 10일만에 베끼듯 개발]
+
+   - 웹브라우저 내에서 HTML, CSS를 조작/제어하는 언어
+
+   ※ ECMA 에서 JS의 표준을 제정/배포 (ES : ECMA Script, 현재 ES5, ES6까지!!)
+
+   - 웹브라우저에 내장된 자바스크립트 해석엔진에 의해서 명령을 처리 (interprete)
+
+   Java --> (문법을 베끼고) Javascript  ---> (간단하게 사용하게) jQuery
+                               Angular, Vue, React JS Framework <--- 현재!
+   ※ 업무적으로 Javascript 는 계속 발전~!
+                     jQuery --> Angular, Vue, React   ---> ? Vue2.x 3.x.. 
+                   현) 3.x           [한때의 트렌드]
+                       4.x ?
+   ※ Typescript >   Javascript  >   jQuery   : 프런트엔드 개발자 영역
+       정적타입        동적타입     동적타입
+        *.ts               *.js                *.js
+    TSC --> *.js
+
+  2. 자바스크립트 사용법
+
+   2-1. HTML 내에 삽입 :  (x)
+   2-2. HTML-JS 연결해서 사용 : O
+ 
+     </head> 앞 이나   </body> 앞
+
+   ※ </head> 앞에 JS 호출(=연결) 코드를 작성할때는 오류 ==> VIEW 보여지지 않을 수 있음
+
+   <script src="js가 있는 위치/파일명.js"></script> : 외부 자바스크립트
+   </head>  or  </body>
+
+
+  :: 자바스크립트 식별 규칙
+
+  1) var : variable 변수 선언 키워드 [old]
+  2) let  : ES5 새롭게 지정된 변수 선언 키워드
+      const :  "                    상수        "        <상수: 값 변경시 오류발생>
+
+  ※ 변수 선언시 var 어느 위치에서든 (=변수선언 및 값을 초기화 하지 않고도 사용이 가능!! 문제)
+       var name="홍길동"; <--->   name="홍길동";     : JS 에서는 같았음
+  
+  식별자는 _, $ 외에 기호 사용시 에러발생, 대,소문자 구별, 문장끝 ;
+
+
+ :: 자바스크립트
+
+   - 원래  HTML 과 함께 사용 (포함 or 연결)
+   - NodeJS 에서는 그냥 사용가능  <--- NodeJS 설치 후    
+   ※ vscode에서는 code runner 라는 확장기능을 추가하면 가능!!
+
+ :: VSCODE + JS 확장기능(Code Runner)
+ 
+  ※ 한글 깨지는 경우는 NodeJS를 설치 하거나, 문자열 인코딩을 EUC-KR로 변경해야 함
+  ※ Nodejs 설치를 하면 영구적으로 해결,    인코딩은 수시로(?) 변경해야할수 있음..
+   1. https://nodejs.org
+   2. Recommend > v18.13.0 LTS 버전 다운로드
+   3. 실행
+   ※ 만약 한달뒤 v19.01.03 LTS 버전업 시키려면? 1~3 수행 (=Window의 경우만)
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

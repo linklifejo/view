@@ -1,0 +1,39 @@
+
+- camelCase : top + nav ==> topNav
+- PascalCase : class PersonObject() { ... }
+- snake_case : def main_func : 
+
+coding convention [코딩 컨벤션]
+==> 네이버 코딩컨벤션 [10년 더 전에~]
+==> 구글 웹마스터 도구
+==> 다음/카카오 코딩컨벤션
+
+
+
+  :: 사용자 데이터 입력양식 (폼)
+
+  - input 태그 : 한 줄 작성 태그
+  - textarea 태그 : 여러 줄 작성 태그
+
+  - select 태그 : 드롭다운 리스트
+    <label for="lang">국번</label>
+    <select id="lang">
+          <option value="02">서울특별시</option>
+          <option value="062" selected>광주광역시</option>
+          <option value="jp">일본어</option>
+    </select>
+     + javascript onChange() ==> http://ko.hanuledu.org 리다이렉션
+
+ - <input type="file"> : 파일 첨부
+ 
+
+
+
+
+
+
+
+
+
+
+

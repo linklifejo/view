@@ -1,0 +1,21 @@
+
+
+::Reset vs Normalize CSS?
+
+	- Reset : 완전 초기화, 각 브라우저드이 정의한 저마다의 스타일을
+				  온전히 초기화 ==> Zero! + @ (커스터마이징) 원하는 스타일!
+
+<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"/>
+${cursor}
+
+	- Normalize : 각 브라우저들의 저마다의 스타일을 유지하면서,
+					  동시에 모든 브라우저들이 동이랗게 보이도록 최소한의
+					  초기화
+
+<link rel="stylesheet" hrer="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+${corsor}
+
+ ※ mvp : 기본 브라우저 스타일 + 세련된 스타일링 | 초기스타일 리셋x
+
+<link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css">
+${corsor}

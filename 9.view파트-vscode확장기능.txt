@@ -1,0 +1,23 @@
+
+  :: vscode extension [확장기능]
+
+   1) Prettier Code Formatter
+       - 파일 저장시 HTML, CSS, JS등의 코드 포맷팅 플러그인
+       - 다양한 코드 포맷을 지원
+       ※ 활성화 : 사용자 설정(settings.json) > 편집기 > 서식 에서 Editor: Format on Save 항목 체크!
+
+   2) ESLint : Javascript Formatter
+       - 오류검출
+       - 포맷팅 지원
+
+   3) LiveServer 
+      - 웹서버 제공
+      ※ 오라클 EM(5500번)과 동일한 포트로 충돌이 발생할 수 있으나, 확장설정에서 PORT를 변경하여
+         해결가능
+
+  4) MarkDown All In One
+     - *.md 포맷 지원 (자동으로 뷰어처럼 동작)
+  
+   ※ 설치방법
+   - Extensions 단추 클릭, (검색란) prettier 검색 후 해당 플러그인 설치(install)
+   - 추가 설정 : 톱니바퀴 > 확장기능 설정 [Tab Width, Quotation Rule, etc]

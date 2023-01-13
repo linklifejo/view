@@ -1,0 +1,38 @@
+
+   I. 코딩용 글꼴
+
+  -추천 : D2Coding (Naver Corp.에서 개발/무료로 배포하는 글꼴)
+  - IDE에서 Ligature 제공해준다면, D2Coding Ligature 사용을 권장)
+  ※ Ligature : (혈관 등을) 묶는데 쓰는 실끈?  ex> 연산자 != 
+  ※ Hack, spoqa 등등..인기있는 코딩용 폰트를 두루 써보시길 권함!  
+
+  Eclipse > Window > Preferences > General > Appearance > Colors and Fonts 에서
+  Basic - Text Font  [Edit..] 버튼 클릭, 글꼴(F) 에서 D2Coding 어쩌구를 선택, 적용된
+  글꼴등을 확인합니다.
+
+  ※ 글꼴 크기는 단축키 [CTRL]+[+/-]로 조정
+  ※ D2Coding 또는 D2Coding Ligature를 선택적으로 설치 한 뒤, 해당글골을
+     환경설정에서 선택해주어야 적용이 됩니다.
+
+  - 눈누   (무료 글꼴사이트)  https://noonnu.cc
+  - D2Coding   https://github.com/naver/d2codingfont/releases/tag/VER1.3.2
+  - hack          https://sourcefoundry.org/hack/
+  ※ 어떤 폰트라도 *.ttf, *.otf 포맷을 윈도우에 설치 가능!! 
+ 
+ II. Emmet Snippet 적용
+ ※ 스니펫 ==> 작은 코드 조각, 재사용성을 극대화!
+ re+tab --> 자동으로 reset css 연결코드를 추가해주는 기능설정!
+
+ window > preferences > Emmet > Snippets 에서 [New]
+1) Name : re 
+ ※ 짧게 사용할 축약어, re + tab 형태로 사용!
+2) Description : 해당 축약어에 대한 간략한 설명
+3) Pattern : 완성되어 추가될 코드라인
+   ex> <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+4) Insert Variable.. 줄바꾸고 커서의 위치를 결정하는 변수추가 [필요하면]
+
+
+
+
+
+ 
