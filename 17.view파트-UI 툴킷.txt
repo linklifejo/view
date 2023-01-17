@@ -1,0 +1,61 @@
+
+   :: 캐러셀
+
+   - 웹서비스 제작할때 메인 페이지에서 크고 멋진? 사진들을로 시선을 붙잡는 그런용도!
+   
+   I. 직접 만드는 방법
+   --> 어렵다..HTML/CSS/JS(jQuery)
+   --> 원리를 이해하기 위해!  [버튼등을 조작해서 UI를 제어하는 방법] (이벤트)
+
+  II. 누군가 만들어서 공개한(or 판매한) 것을 가져다 사용하는 방법
+   -- swiper.js
+   -- slick.js
+   -- bxslider.js
+   -- etc (jquery carousel, js slide....검색)
+
+
+  Q. 캐러셀 사용을 생각하고 서비스를 제작한다면?
+
+    1. 사용할 캐러셀을 선정 :   https://kenwheeler.github.io/slick/
+    2. UI를 작성 : Figma, Plug-In, Kit 활용 /  Pixabay 무료 이미지 소스
+    3. IDE 실행 - 작업폴더 생성 , 파일 / 폴더 구조 만들기
+       - index.html
+       - /css
+       - /images
+       - /script
+    4. 캐러셀 (플러그인) 제공 소스 또는 CDN 연결
+       - 제공소스는 다운받아서 사용하거나 개발 환경에 맞게 준비
+       - 실습에서는 CDN 대체함.
+
+  :: Bootstrap (HTML/Javascript/CSS FRAMEWORK)  / 프런트엔드 프레임워크
+
+    vs tailwindCss
+
+    [설명] Powerful, extensible, and feature-packed frontend toolkit.
+
+    [URL]    https://getbootstrap.com/
+
+
+  v4   vs  v5 차이    <------>   jQuery 사용    vs    순수JS 사용 
+  그 밖에 제공되는 컴포넌트의 갯수(적다 vs 많다)의 차이등이 있지만, 세세한 차이는 Migrations
+
+  ※ 실습에서는 v4.6.x 버전을 사용합니다.
+
+  https://getbootstrap.com/docs/4.6/getting-started/introduction/
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+ 
+ 

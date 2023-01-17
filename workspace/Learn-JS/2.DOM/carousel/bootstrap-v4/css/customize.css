@@ -1,0 +1,22 @@
+body {
+  background: #fffae9;
+}
+
+.header-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-register {
+  background: #fd5d11;
+  color: white;
+}
+
+.ml-10 {
+  /* 0 ~ 5, auto 외에 다른 단위추가는 커스텀 */
+  margin-left: 10rem !important;
+}
+
+.bg-orange {
+  background: #fd5d11;
+}

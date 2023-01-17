@@ -17,6 +17,13 @@ let slideNumber = 1;
 4번사진 : 3000  = 3 x -1000    -3000
 */
 // 왼쪽버튼에 클릭 이벤트를 추가해보자!
+function leftScene(){
+  left.click();
+}
+
+window.setInterval(leftScene, 4000);
+
+
 left.addEventListener("click", function () {
   // 일반 함수 표기법
   if (slideNumber < images.length) {
