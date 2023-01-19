@@ -1,0 +1,35 @@
+
+   :: 부트스트랩 무료 테마
+
+   - 대부분은 실제로는 유료 (50$ 이상~)   / 상업적 이용 (고객사이트 제작, ..)
+   - 무료 : 개인 포트폴리오 / 사업용도로 제품홍보~
+
+    1. 개발자 포트폴리오 테마 검색
+       구글 > bootstrap free theme 검색,
+
+    2. 첫번째 검색결과 사이트 방문
+    https://startbootstrap.com/themes
+
+    3. Freelancer [Free] 테마 선택, Download
+
+    4. 압축 해제
+
+    5. VSC 폴더열기
+
+      - 폰트 아이콘 : FontAwesome
+      - 글꼴   : Google Font (Monteserrat, Lato)
+      - 그밖에  (포함된 asset 폴더를 확인)
+
+    6. 커스터마이징
+     - 파비콘  : 커피모양~
+     - 마스트 헤드 <---> 헤더 / 히어로 영역 내용 변경
+     ※ 아바타 생성기(avatar maker)를 이용해 실제 사진을 카툰 렌더링 한 결과를
+         svg 포맷으로 저장하고, 이것을 대체하여 사용
+
+
+
+
+
+
+
+

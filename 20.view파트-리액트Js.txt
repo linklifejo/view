@@ -1,0 +1,47 @@
+
+ :: 리액트JS
+  [정의]
+  React, A JavaScript library for building user interfaces
+  리액트, UI를 만드는 자바스크립트 라이브러리 <-- jQuery도 라이브러리
+
+
+  - 프런트엔드 개발자들이 사용하는 UI 라이브러리 (
+  - 페이스북 그룹 (현. META)에서 만들어서 거의 업계 표준처럼 사용
+  - 유사한 기능을 제공(=Single Page Application, SPA / 하나의 페이지로 구성)
+     하는 기타 자바스크립트 프레임워크 (Vue, Angular, 그밖에..)
+  
+
+  I. 사용법(=개발환경 구축)
+   - (순수하게) React 라이브러리를 [직접] 추가해서 사용하는 방법
+     ※ 최신버전은 v18.2.0 이지만, 실무에서는 여전히 v17을 많이 사용
+
+      1.https://reactjs.org/docs/add-react-to-a-website.html [Try React]
+      2.제공된 소스코드중 react v18.2.0 라이브러리 추가 스크립트 복붙
+     <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+
+
+   - (자동화된) React 개발환경을 구성해서 사용하는 방법 [업무]
+     1. 새 터미널 열기 : CTRL + `
+     2. 터미널에 아래 명령어를 입력
+        $    npx create-react-app start-react
+     ※ CRA(=Create React App)에 대한 보다 자세한 설정 및 정보는
+        https://create-react-app.dev   에서 확인하세요!
+     ※ Powershell의 경우 권한문제로 에러가 발생할 수 있음. 권한해제 진행!
+        Set-ExecutionPolicy Unrestricted      [권한설정 해제(제한없음)]
+        Get-ExecutionPolicy -List                [설정된 권한목록 확인]
+
+     ※ VSC를 종료 후 다시 시작해야할 필요가 있음.
+
+     ※ NodeJS 모듈시스템 --> npx create-react-app [프로젝트명]
+
+
+
+

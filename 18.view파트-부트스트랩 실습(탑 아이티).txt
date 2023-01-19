@@ -1,0 +1,41 @@
+
+  :: 부트스트랩 v4.6.x
+
+    Build fast, responsive sites with Bootstrap [ Web Developer's Toolkit ]
+
+   1. 버전별 차이 (https://getbootstrap.com/docs/5.3/migration)
+       v4 : jQuery 사용버전                  [오랫동안 사용]
+       v5 : 순수 자바스크립트 사용버전   [앞으로 오랫동안 사용할]
+
+   2. 사용방법
+       - 그리드 시스템 : 격자 배열  (보통 12, 16, 24 칸으로 분할)
+       ※ 최초의 그리드 시스템 (https://960.gs)
+       - 12컬럼 그리드 레이아웃 : 화면을 12개로 분할
+       - 컬럼 Width, 컬럼간 간격 Gutter, 전체폭과 컨테이너 사이 여백 margin은
+          Grid Calcultor를 이용해서 계산(http://gridcalculator.dk/)
+
+       - Figma > New Design File을 생성[+]
+       - 디자인 파일 이름 정의 : 예) 탑-아이티 학원
+       - 새 프레임 생성 : 1920 x 1080 [전체 폭 사이즈]
+       - 생성된 프레임의 [Design > Layout Grid]에서 새 그리드 생성 [+]
+          Grid 10px   ---> Column 으로 변경
+          Count :1     ---> 12로 변경
+          Stretch       ---> Center로 변경
+          Gutter      --> 20~30 사이 (Grid Calculator로 계산된 크기)
+         ※ 보통 20, 24, 30 사용하지만, 각자가 선택해도 무관.
+          Margin     ---> 바깥쪽 여백이라 신경안써도 됨..
+       - 로고, 메뉴, 버튼, 사진, 영상 등등...UI 요소를 (1) 처음에는 상자나 선(line)으로
+         표현하고 적절히 배치한 뒤 (2) 실제 컬러, 사진등으로 변경
+     
+   3. 부트스트랩
+      - 레이아웃 : .container, .container-fluid
+      - 그리드시스템 : 12컬럼 그리드, .col or .col-칸수 
+      ※ .col-칸수의 총합 : 12개가 넘으면 새로운 .row가 묵시적으로 생성
+      - 컴포넌트 : 사전에 정의된 요소들 a~z
+      ※ 검색을 통해서 빠르게 찾거나 bootstrap cheat sheet [요약정리표]
+
+    - 내일 개발자용 PF(portfolio 구성 + bootstrap ==> React.js)
+
+
+
+
